@@ -22,6 +22,7 @@ function App() {
       {bakeryData.map((item, index) => (
         <div key={index}>
           <p>{item.name}</p>
+          <img src={item.image}/>
           <p>{item.price}</p>
           <button onClick={() => addItem(item)}>Add {item.name}
           </button>
